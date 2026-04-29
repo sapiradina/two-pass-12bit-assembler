@@ -110,6 +110,7 @@ Given an input file file.as, the assembler may generate:
 
 ## 🧪 Example
 ### Input (`example.as`)
+```
 mcro m1
     inc r2
 endmcro
@@ -117,11 +118,14 @@ endmcro
 MAIN:   mov #5, r1
         m1
         stop
+```
 
 ### Output (excerpt from .ob)
+```
 010 A  0005
 102 A  2002
 F00 A
+```
 
 ## 🚀 How to Build & Run
 ### Build
