@@ -1,0 +1,27 @@
+MAIN: mov @r3 ,LENGTH
+mcro prn
+aaa
+endmcro
+LOOP: jmp L1
+mcro m1 hy
+sub @r1, @r4
+bne END
+endmcro
+8888888888888888888888888888888888888888888888888888888888888888888888888888888000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000        
+prn -5
+bne LOOP
+m1
+mcro m2
+aaa
+bbb        
+ccc
+endmcro hy
+L1: inc K
+bne LOOP
+mcro 4m3
+a
+endmcro
+END: stop
+STR: .string "abcdef"
+LENGTH: .data 6,-9,15
+K: .data 22
